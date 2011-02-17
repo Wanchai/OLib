@@ -1,6 +1,6 @@
 package com.odelay {
 	import com.odelay.skins.AlertSkin;
-	import com.odelay.supportClasses.AlertEvent;
+	import com.odelay.supportclasses.AlertEvent;
 	import flash.display.Sprite;
 	import flash.events.Event;
 	import flash.events.MouseEvent;
@@ -101,7 +101,7 @@ package com.odelay {
 			_text = value;
 		}
 		
-		public static function show(text:String = "", type:int = 0, parent:Sprite = null, closeHandler:Function = null):void {
+		public static function show(text:String = "", type:int = 0, parent:Sprite = null, closeHandler:Function = null, skin:Class = null):void {
 			
 			var alert:SkinnableAlert = new SkinnableAlert();
 			alert.x = parent.stage.stageWidth / 2 - alert.width / 2;
@@ -125,6 +125,8 @@ package com.odelay {
 			}
 			
 			if (!parent) parent = Sprite(FlexGlobals.topLevelApplication);
+			
+			if (skin != null) alert.setStyle("skinClass", skin);
 			
 			if (closeHandler != null) alert.addEventListener(AlertEvent.RESULT, closeHandler);
 			

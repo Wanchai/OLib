@@ -4,7 +4,7 @@
     xmlns:s="library://ns.adobe.com/flex/spark">
 	
     <fx:Metadata>
-        [HostComponent("com.odelay.SkinComp")]
+        [HostComponent("com.odelay.SkinnableAlert")]
     </fx:Metadata>
 
 <!--    <s:states>

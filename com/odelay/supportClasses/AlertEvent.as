@@ -1,4 +1,4 @@
-package com.odelay {
+package com.odelay.supportclasses {
 	import flash.events.Event;
 	/**
 	 * ...
