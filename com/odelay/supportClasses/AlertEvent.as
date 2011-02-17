@@ -1,0 +1,24 @@
+package com.odelay {
+	import flash.events.Event;
+	/**
+	 * ...
+	 * @author ThomasOdelay www.agence-odelay.com
+	 */
+	public class AlertEvent extends Event {
+		
+		public var result:int = 0;
+		
+		public static const RESULT:String = "result";
+		
+		public function AlertEvent(type:String, result:int){
+			super(type);
+			
+			this.result = result;
+		}
+		override public function clone():Event {
+            return new AlertEvent(type, result);
+        }
+
+	}
+
+}

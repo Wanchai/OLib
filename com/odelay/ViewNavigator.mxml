@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:HGroup xmlns:fx="http://ns.adobe.com/mxml/2009"
+					   xmlns:s="library://ns.adobe.com/flex/spark">
+					   
+	<fx:Declarations>
+		<s:Animate id="slideOne" target="{this}" repeatCount="1" disableLayout="true">
+            <s:motionPaths>
+                <s:SimpleMotionPath property="x" valueFrom="0" valueTo="-320"/>
+            </s:motionPaths>
+        </s:Animate>
+		<s:Animate id="slideTwo" target="{this}" repeatCount="1" disableLayout="true">
+            <s:motionPaths>
+                <s:SimpleMotionPath property="x" valueFrom="-320" valueTo="0"/>
+            </s:motionPaths>
+        </s:Animate>
+	</fx:Declarations>
+	
+	
+</s:HGroup>
