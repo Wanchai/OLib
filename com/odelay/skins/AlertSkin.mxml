@@ -6,13 +6,6 @@
     <fx:Metadata>
         [HostComponent("com.odelay.SkinnableAlert")]
     </fx:Metadata>
-
-<!--    <s:states>
-        <s:State name="up"/>
-        <s:State name="over"/>
-        <s:State name="down"/>
-        <s:State name="disabled"/>
-    </s:states>-->
 	
 	<s:Rect top="0" left="0" right="0" bottom="0">
 		<s:fill>
