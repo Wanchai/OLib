@@ -12,11 +12,6 @@ package com.odelay {
 	import spark.components.TextArea;
 	
 	/**
-	 * Usage : SkinnableAlert.show(
-	 * display text : String
-	 * type : int (0 = One OK button, 1 = Yes/No, 2 = Yes/No/Cancel, 3 = custom/custom/custom) Depending of the type you choose, you will have to define the corresponding number of skin parts. With type 3, you will have to define the 'labels' property to avoid empty buttons.
-	 * parent : Sprite
-	 * closeHandler : Function (receives an AlertEvent with a result property corresponding of the button clicked : 1-first button, 2-second, 3-third, 4-close button)
 	 *
 	 * @author ThomasOdelay www.agence-odelay.com
 	 */
@@ -36,7 +31,7 @@ package com.odelay {
 		[SkinPart(required="false")]
 		public var buttonThree:Button = null;
 		
-		[SkinPart(required="true")]
+		[SkinPart(required="false")]
 		public var closeButton:Button = null;
 		
 		[SkinPart(required="true")]
@@ -101,7 +96,7 @@ package com.odelay {
 			_text = value;
 		}
 		
-		public static function show(text:String = "", type:int = 0, parent:Sprite = null, closeHandler:Function = null, skin:Class = null):void {
+		public static function show(text:String = "", type:int = 0, parent:Sprite = null, closeHandler:Function = null, skin:Class = null, label:Array = ["","",""]):void {
 			
 			var alert:SkinnableAlert = new SkinnableAlert();
 			alert.x = parent.stage.stageWidth / 2 - alert.width / 2;
@@ -119,7 +114,7 @@ package com.odelay {
 					labels = ["Yes", "No", "Cancel"];
 				break;
 				case 3 :
-					
+					labels = label;
 				break;
 				default:
 			}
