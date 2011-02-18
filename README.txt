@@ -1,4 +1,7 @@
 OdelayLib
 
 Library of time saving components.
-SkinnableAlert
+
+For more details, please check the wiki.
+
+EVERYTHING IS UNDER CONSTRUCTION, PLEASE BE PATIENT.
