@@ -102,27 +102,22 @@ package com.odelay {
 			_text = value;
 		}
 		
-		public static function show(text:String = "", type:int = 0, parent:Sprite = null, closeHandler:Function = null, skin:Class = null, label:Array = ["","",""]):void {
+		public static function show(text:String = "", type:int = 0, parent:Sprite = null, closeHandler:Function = null, skin:Class = null, label:Array = null):void {
 			
 			var alert:SkinnableAlert = new SkinnableAlert();
 			alert.x = parent.stage.stageWidth / 2 - alert.width / 2;
 			alert.y = parent.stage.stageHeight / 2 - alert.height / 2;
 			
 			alert._text = text;
-
-			switch (type) {
-				case 0 :
-				break;
-				case 1 :
-					labels = ["Yes", "No"];
-				break;
-				case 2 :
-					labels = ["Yes", "No", "Cancel"];
-				break;
-				case 3 :
-					labels = label;
-				break;
-				default:
+			
+			if (label == null && type == 1) {
+				labels = ["Ok"];
+			}else if (label == null && type == 2) {
+				labels = ["Yes", "No"];
+			}else if (label == null && type == 3) {
+				labels = ["Yes", "No", "Cancel"];
+			}else {
+				labels = label;
 			}
 			
 			if (!parent) parent = Sprite(FlexGlobals.topLevelApplication);
