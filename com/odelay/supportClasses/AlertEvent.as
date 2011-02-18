@@ -2,7 +2,7 @@ package com.odelay.supportclasses {
 	import flash.events.Event;
 	/**
 	 * ...
-	 * @author ThomasOdelay www.agence-odelay.com
+	 * @author Thomas @ThomasOdelay www.agence-odelay.com
 	 */
 	public class AlertEvent extends Event {
 		

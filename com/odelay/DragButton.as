@@ -1,7 +1,7 @@
 package com.odelay {
 	/**
 	 * ...
-	 * @author ThomasOdelay www.agence-odelay.com
+	 * @author Thomas @ThomasOdelay www.agence-odelay.com
 	 */
 	
 	import flash.events.Event;

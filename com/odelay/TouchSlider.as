@@ -4,7 +4,7 @@ package com.odelay {
 	import spark.events.TrackBaseEvent;
 	/**
 	 * ...
-	 * @author Tmhk
+	 * @author Thomas @ThomasOdelay www.agence-odelay.com
 	 */
 	public class TouchSlider extends HSlider {
 		

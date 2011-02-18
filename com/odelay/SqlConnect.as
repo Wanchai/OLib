@@ -5,7 +5,7 @@
 	import flash.filesystem.*;
 	/**
 	 * ...
-	 * @author Tmhk
+	 * @author Thomas @ThomasOdelay www.agence-odelay.com
 	 *
 	 * Usage :
 	 * public var db:SqlConnect;

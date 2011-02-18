@@ -3,7 +3,7 @@ package com.odelay {
 	import spark.primitives.Rect;
 	/**
 	 * ...
-	 * @author Tmhk
+	 * @author Thomas @ThomasOdelay www.agence-odelay.com
 	 */
 	public class HR extends Rect{
 		
